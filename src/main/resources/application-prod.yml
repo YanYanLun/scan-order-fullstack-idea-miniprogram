@@ -1,0 +1,18 @@
+# 微信云托管 (WeChat CloudRun) 生产环境配置
+# 微信云托管内网 MySQL 环境变量自动注入 (MYSQL_ADDRESS, MYSQL_USERNAME, MYSQL_PASSWORD)
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_ADDRESS:localhost:3306}/${MYSQL_DATABASE:scan_order}?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:rootpassword}
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  sql:
+    init:
+      mode: never
