@@ -10,7 +10,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-# 构建可执行 JAR
+# 构建可执行 JAR (跳过单测加速构建)
 RUN mvn clean package -DskipTests
 
 # 阶段 2: 运行环境
@@ -24,7 +24,7 @@ COPY --from=builder /app/target/scan-order-backend-springboot-*.jar app.jar
 EXPOSE 80
 ENV PORT=80
 ENV SPRING_PROFILES_ACTIVE=prod
-ENV JAVA_OPTS="-Xms256m -Xmx512m -Dfile.encoding=UTF-8"
+ENV JAVA_OPTS="-Xms128m -Xmx512m -Dfile.encoding=UTF-8 -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0"
 
-# 启动容器
+# 启动容器并传递端口参数
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar --server.port=${PORT}"]

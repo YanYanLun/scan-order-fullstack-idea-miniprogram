@@ -1,12 +1,8 @@
 # 本地开发环境配置 (默认采用 H2 内存数据库，零安装即开即用，秒级启动)
-spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    # MODE=MySQL 并配置 NON_KEYWORDS=YEAR,MONTH,DAY，避免保留字冲突
-    url: jdbc:h2:mem:scan_order;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;NON_KEYWORDS=YEAR,MONTH,DAY
-    username: sa
-    password: ""
+server:
+  port: 8080
 
+spring:
   h2:
     console:
       enabled: true
@@ -26,4 +22,4 @@ spring:
 
   sql:
     init:
-      mode: never # 数据由 DataInitializer.java 自动注入，具备跨平台兼容性
+      mode: never

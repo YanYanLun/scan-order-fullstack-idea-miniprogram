@@ -1,4 +1,7 @@
 # 本地真实 MySQL 开发环境配置 (激活方式: 修改 application.yml 中 spring.profiles.active: mysql)
+server:
+  port: 8080
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -8,13 +11,13 @@ spring:
     password: rootpassword  # 🚨 本地 MySQL 密码 (如 123456 / root)
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+        globally_quoted_identifiers: true
 
   sql:
     init:

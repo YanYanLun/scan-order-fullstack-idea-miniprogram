@@ -10,19 +10,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 微信云托管探针健康检测与云框架环境探测
+ * 微信云托管探针健康检测与云框架环境探测 (支持微信云托管 Liveness/Readiness 探针与通用健康探活)
  */
 @RestController
 @RequestMapping
 public class HealthController {
 
-    @GetMapping({"/health", "/api/health"})
+    @GetMapping({"/", "/health", "/healthz", "/api/health", "/api/healthz", "/actuator/health"})
     public Result<Map<String, Object>> health() {
         Map<String, Object> map = new HashMap<>();
         map.put("status", "UP");
+        map.put("service", "scan-order-backend-springboot");
         map.put("framework", "WeChat CloudRun + SpringBoot 3");
         map.put("timestamp", System.currentTimeMillis());
-        return Result.success("服务正常运行中", map);
+        return Result.success("微信云托管服务正常运行中", map);
     }
 
     @GetMapping({"/wx/cloud/info", "/api/wx/cloud/info"})

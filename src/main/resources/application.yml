@@ -1,7 +1,5 @@
 server:
   port: ${PORT:8080}
-  servlet:
-    context-path: /api
 
 spring:
   profiles:
@@ -19,7 +17,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: "*"
   endpoint:
     health:
       show-details: always
