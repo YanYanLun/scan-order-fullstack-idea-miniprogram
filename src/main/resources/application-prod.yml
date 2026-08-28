@@ -10,6 +10,7 @@ spring:
     password: ${MYSQL_PASSWORD:}
 
   jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: none
     show-sql: false
