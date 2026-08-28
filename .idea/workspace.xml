@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7453b8ed-fa97-4911-90de-da78cacd2975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="9338e084-7497-4e18-b520-f775868da796" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-IDEA报错与构建排错指南.md" beforeDir="false" afterPath="$PROJECT_DIR$/1-IDEA报错与构建排错指南.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/container.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/container.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scanorder/controller/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scanorder/controller/HealthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-mysql.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-mysql.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application-mysql.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" />
@@ -26,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/common/GlobalExceptionHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/common/Result.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/config/DataInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/config/DataSourceConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/config/WebMvcConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/config/WxCloudInterceptor.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scanorder/context/WxCloudContext.class" beforeDir="false" />
@@ -70,7 +64,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="3IX5gjAV6Yl6RDNflK4zd7Rj7L8" />
+  <component name="ProjectId" id="3IXE4lPZOI3niTp5ZZsFUl6lck4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -93,7 +87,6 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
     "vue.rearranger.settings.migration": "true"
   }
@@ -117,12 +110,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7453b8ed-fa97-4911-90de-da78cacd2975" name="Changes" comment="" />
-      <created>1787898186472</created>
+      <changelist id="9338e084-7497-4e18-b520-f775868da796" name="Changes" comment="" />
+      <created>1787902324561</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1787898186472</updated>
-      <workItem from="1787898187692" duration="482000" />
+      <updated>1787902324561</updated>
+      <workItem from="1787902325829" duration="872000" />
     </task>
     <servers />
   </component>

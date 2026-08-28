@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "containerPort": 80,
   "customLogs": "stdout",
-  "initialDelaySeconds": 10,
+  "initialDelaySeconds": 30,
   "envParams": {
     "PORT": "80",
     "SPRING_PROFILES_ACTIVE": "prod"
