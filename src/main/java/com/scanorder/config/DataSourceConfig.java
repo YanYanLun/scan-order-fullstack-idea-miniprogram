@@ -18,13 +18,13 @@ import javax.sql.DataSource;
 public class DataSourceConfig {
     private static final Logger log = LoggerFactory.getLogger(DataSourceConfig.class);
 
-    @Value("${MYSQL_ADDRESS:#{null}}")
+    @Value("${SCAN_ORDER_MYSQL_ADDRESS:10.30.101.194:3306}")
     private String mysqlAddress;
 
-    @Value("${MYSQL_USERNAME:root}")
+    @Value("${SCAN_ORDER_MYSQL_USERNAME:root}")
     private String mysqlUsername;
 
-    @Value("${MYSQL_PASSWORD:rootpassword}")
+    @Value("${SCAN_ORDER_MYSQL_PASSWORD:12315t%12315T}")
     private String mysqlPassword;
 
     @Value("${MYSQL_DATABASE:scan_order}")
