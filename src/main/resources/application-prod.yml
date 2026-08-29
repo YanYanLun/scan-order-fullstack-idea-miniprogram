@@ -1,13 +1,13 @@
 # 微信云托管 (WeChat CloudRun) 生产环境配置
 server:
-  port: ${PORT:80}
+  port: 80
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS:10.30.101.194:3306}/scan_order?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
-    username: ${MYSQL_ACCOUNT:${MYSQL_USERNAME:root}}
-    password: ${MYSQL_PASSWORD:}
+    url: jdbc:mysql://10.30.101.194:3306/scan_order?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 12315t%12315T
 
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect

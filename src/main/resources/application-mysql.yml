@@ -6,9 +6,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     # createDatabaseIfNotExist=true 允许本地自动创建 scan_order 数据库
-    url: jdbc:mysql://localhost:3306/scan_order?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://47.109.178.92:3306/scan_order?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root          # 🚨 本地 MySQL 账号
-    password: rootpassword  # 🚨 本地 MySQL 密码 (如 123456 / root)
+    password: 12315t  # 🚨 本地 MySQL 密码 (如 123456 / root)
 
   jpa:
     hibernate:
